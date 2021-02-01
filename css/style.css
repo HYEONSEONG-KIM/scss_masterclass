@@ -1,0 +1,24 @@
+.father{
+    display: flex;
+    /*Main Axis*/
+    justify-content: space-around;
+    
+    height: 100vh;
+}
+
+.child{
+    width: 200px;
+    height: 200px;
+    background-color: peru;
+    color: white;
+    font-size: 50px;
+}
+
+.child:nth-child(1){
+    order: 2;
+}
+
+
+.child:nth-child(2){
+    order: 3;
+}
