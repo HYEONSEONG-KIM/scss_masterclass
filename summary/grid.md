@@ -24,3 +24,16 @@
     * fraction : 사용공간을 뜻함, 공간을 유연적으로 사용할 수 있음, 기본적으로 가능한 만큼 공간 차지 => ex)1fr 2fr ...
     * 높이를 지정하지 않으면 row에서 fr을 지정해도 0으로 인식
     * grid-template : 자식들의 grid-area 이름을 지정해주고 area와 같은 방식에 row값을 적어주고 마지막에 /(column)값 적어주면 됨, repeat은 적용되지 않음
+- 8.Place Items
+    * justify-items(수평), align-items(수직)의 속성은 부모에게 있음, 기본값은 strech, stretch가 아니면 자식들이 채워지지 않을 수 있음(기본크기를 지정하지 않고 text만 입력시)
+    * justify-items : 수평을 기준으로 이동, 수직은 채워지지만 수평은 설정한 속성대로 적용
+    * align-items : 수직을 기준으로 이동, 수평은 채워지지만 수직을 설정항 속성대로 적용
+    * place-items : y x => 한번에 설정하기위해, y는 수직(align) x는 수평(justify)
+- 9.Place Content
+    * 전체 grid를 움직이는 방법, justify-content 와 align-content 가 있음
+    * justify-content : 전체의 열(column)을 움직임
+    * align-contens : 전체의 행(row)를 움직임
+    * stetch(전체채움)을 사용하려면 크기를 px이 아닌 fr로 설정
+    * place-content : y x =>한번에 설정, y(수직) x(수평) 
+    * items -> box 하나하나에 적용, content -> grid전체에 적용
+
