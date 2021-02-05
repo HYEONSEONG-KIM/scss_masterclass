@@ -36,4 +36,10 @@
     * stetch(전체채움)을 사용하려면 크기를 px이 아닌 fr로 설정
     * place-content : y x =>한번에 설정, y(수직) x(수평) 
     * items -> box 하나하나에 적용, content -> grid전체에 적용
-
+- 10.Auto Columns and Raows
+    * align(justify)-self는 box개별적으로 속성을 줄 때 사용
+    * place-self y/x: 한번에 설정
+    * 설정한 row보다 가져온 data가 더 많을 경우 지정해준 범위 만큼만 값이 설정되고 나머지는 기본값
+    * grid-auot-rows: (크기)를 사용하면 기존에 설정한 범위 이외의 나머지 범위의 값을 설정, 기존에 설정하지 않았으면 전체에 설정
+    * grid-auto-flow : 원래는 자동으로 row값이 default 되지만 row가 아닌 다른 속성을 적용할 수 있음
+    * grid-auto-columns : flow로 column를 지정하면 row로 정렬 되었던 box들이 column으로 정렬(flexbox에서 direction과 비슷)
