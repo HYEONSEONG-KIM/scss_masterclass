@@ -43,3 +43,16 @@
     * grid-auot-rows: (크기)를 사용하면 기존에 설정한 범위 이외의 나머지 범위의 값을 설정, 기존에 설정하지 않았으면 전체에 설정
     * grid-auto-flow : 원래는 자동으로 row값이 default 되지만 row가 아닌 다른 속성을 적용할 수 있음
     * grid-auto-columns : flow로 column를 지정하면 row로 정렬 되었던 box들이 column으로 정렬(flexbox에서 direction과 비슷)
+- 11.minmax
+    * element가 가능한한 크길 원하고 동시에 작게 되지 않길 원할때 사용
+    * grid-template-column(row) : repeat(열행갯수,minmax(최소값,최대값))
+    * 페이지를 줄이더라도 지정한 최소값 이하로는 줄어 들지 않음
+- 12.auto-fit, auto-fill
+    * element의 갯수를 알수 없고 무슨일이 일어날지는 알수 있을때 사용 => 반응형 디자인, 유동적인 것, 아이템에 대해서 잘 모를때 사용
+    * auto-fill : 지정해준 사이즈만큼 열(column)을 만들어줌, element가 없더라도 지정해준 사이즈만큼 빈 공간이 만들어짐(row에다가 채워줌)
+    * auto-fit : 지정한 element 갯수에 맞춰 크기를 늘려줌(row에 딱 맞게)
+    * element의 사이즈를 그대로 하고 싶으면 fill, 늘려주고 싶으면 fit
+- 13.min-comtent, max-content
+    * box를 컨텐츠의 크기에 맞게 디자인
+    * max-content : box를 컨텐츠에 필요한 만큼 커짐
+    * min-content : box를 컨텐츠에 필요한 만큼 작아짐
