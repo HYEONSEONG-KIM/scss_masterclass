@@ -8,10 +8,10 @@ sass.compiler = require("node-sass");
 
 const routes = {
   css: {
-    watch: "src/scss/*",
-    src: "src/scss/style.scss",
-    dest: "dist/css"
-  }
+    watch: "scss/*",
+    src: "scss/style.scss",
+    dest: "dist/css",
+  },
 };
 
 const styles = () =>
@@ -21,7 +21,7 @@ const styles = () =>
     .pipe(
       autoprefixer({
         flexbox: true,
-        grid: "autoplace"
+        grid: "autoplace",
       })
     )
     .pipe(minify())
