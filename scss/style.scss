@@ -1,14 +1,15 @@
-@import "mixins";
 
-h2 {
-    color: blue;
-    @include responsive("iphone"){
-        color: red;
-    }
-    @include responsive("Tablet"){
-        font-size: 50px;
-    }
-    @include responsive("Tablet_l"){
-        color: blueviolet;
-    }
+a{
+    text-decoration: none;
+    color: black;
+}
+
+.best{
+    
+    display: flex;
+    border-radius: 30px;
+    background-color: burlywood;
+    width: 150px;
+    justify-content: center;
+   
 }
